@@ -5,8 +5,11 @@
 -- ************************************** Dim_Supplier
 CREATE TABLE Dim_Supplier
 (
- SupplierId int NOT NULL,
- Phone      string,
+ SupplierId  int NOT NULL,
+ CompanyName datetime NOT NULL, -- From template: "Template_76" 
+ Phone       string,
+ col_77      text NOT NULL, -- From template: "Template_76" 
+ Price       varchar(50) NOT NULL, -- From template: "Template_76" 
  CONSTRAINT PK_Dim_Supplier PRIMARY KEY ( SupplierId )
 )
 STAGE_FILE_FORMAT = 
