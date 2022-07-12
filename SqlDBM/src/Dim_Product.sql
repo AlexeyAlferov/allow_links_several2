@@ -8,9 +8,6 @@ CREATE TABLE Dim_Product
  ProductId      int NOT NULL,
  ProductName    string NOT NULL,
  IsDiscontinued boolean NOT NULL,
- col_77         text NOT NULL, -- From template: "Template_76" 
- CompanyName    datetime NOT NULL, -- From template: "Template_76" 
- Price          varchar(50) NOT NULL, -- From template: "Template_76" 
  CONSTRAINT PK_Product PRIMARY KEY ( ProductId )
 )
 STAGE_FILE_FORMAT = 
