@@ -8,9 +8,6 @@ CREATE TRANSIENT TABLE Dim_Customer
  CustomerId   int NOT NULL,
  CustomerName string NOT NULL,
  Phone        string,
- col_77       text NOT NULL, -- From template: "Template_76" 
- CompanyName  datetime NOT NULL, -- From template: "Template_76" 
- Price        varchar(50) NOT NULL, -- From template: "Template_76" 
  CONSTRAINT PK_table_2 PRIMARY KEY ( CustomerId )
 )
 STAGE_FILE_FORMAT = 
