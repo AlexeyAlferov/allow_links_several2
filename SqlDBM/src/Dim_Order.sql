@@ -5,7 +5,11 @@
 -- ************************************** Dim_Order
 CREATE TABLE Dim_Order
 (
- OrderId int NOT NULL,
+ OrderId     int NOT NULL,
+ OrderNumber string NOT NULL,
+ col_77      text NOT NULL, -- From template: "Template_76" 
+ CompanyName datetime NOT NULL, -- From template: "Template_76" 
+ Price       varchar(50) NOT NULL, -- From template: "Template_76" 
  CONSTRAINT PK_DIm_Oreder PRIMARY KEY ( OrderId )
 )
 STAGE_FILE_FORMAT = 
