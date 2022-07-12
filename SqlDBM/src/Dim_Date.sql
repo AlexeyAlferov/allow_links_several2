@@ -5,15 +5,12 @@
 -- ************************************** Dim_Date
 CREATE TABLE Dim_Date
 (
- DateId      int NOT NULL,
- Date        datetime NOT NULL,
- Day         int NOT NULL,
- Week        int NOT NULL,
- Month       int NOT NULL,
- Year        int NOT NULL,
- col_77      text NOT NULL, -- From template: "Template_76" 
- CompanyName datetime NOT NULL, -- From template: "Template_76" 
- Price       varchar(50) NOT NULL, -- From template: "Template_76" 
+ DateId int NOT NULL,
+ Date   datetime NOT NULL,
+ Day    int NOT NULL,
+ Week   int NOT NULL,
+ Month  int NOT NULL,
+ Year   int NOT NULL,
  CONSTRAINT PK_Dim_Date PRIMARY KEY ( DateId )
 )
 STAGE_FILE_FORMAT = 

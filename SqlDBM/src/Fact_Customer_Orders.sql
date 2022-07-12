@@ -5,16 +5,14 @@
 -- ************************************** Fact_Customer_Orders
 CREATE TABLE Fact_Customer_Orders
 (
- CustomerId  int NOT NULL,
- OrderId     int NOT NULL,
- DateId      int NOT NULL,
- SupplierId  int NOT NULL,
- ProductId   int NOT NULL,
- Price       varchar(50) NOT NULL, -- From template: "Template_76" 
- Quantity    int NOT NULL,
- Profit      decimal NOT NULL,
- col_77      text NOT NULL, -- From template: "Template_76" 
- CompanyName datetime NOT NULL, -- From template: "Template_76" 
+ CustomerId int NOT NULL,
+ OrderId    int NOT NULL,
+ DateId     int NOT NULL,
+ SupplierId int NOT NULL,
+ ProductId  int NOT NULL,
+ Price      decimal NOT NULL,
+ Quantity   int NOT NULL,
+ Profit     decimal NOT NULL,
  CONSTRAINT PK_Fact_Customer_Orders PRIMARY KEY ( CustomerId, OrderId, DateId, SupplierId, ProductId ),
  CONSTRAINT FK_Fact_Customer_Orders_CustomerId FOREIGN KEY ( CustomerId ) REFERENCES Dim_Customer ( CustomerId ),
  CONSTRAINT FK_Fact_Customer_Orders_DateId FOREIGN KEY ( DateId ) REFERENCES Dim_Date ( DateId ),
