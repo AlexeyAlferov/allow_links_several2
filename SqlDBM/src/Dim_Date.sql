@@ -7,7 +7,6 @@ CREATE TABLE Dim_Date
 (
  DateId int NOT NULL,
  Date   datetime NOT NULL,
- Day    int NOT NULL,
  Week   int NOT NULL,
  Month  int NOT NULL,
  Year   int NOT NULL,

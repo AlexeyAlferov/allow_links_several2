@@ -5,9 +5,8 @@
 -- ************************************** Dim_Customer
 CREATE TRANSIENT TABLE Dim_Customer
 (
- CustomerId   int NOT NULL,
- CustomerName string NOT NULL,
- Phone        string,
+ CustomerId int NOT NULL,
+ Phone      string,
  CONSTRAINT PK_table_2 PRIMARY KEY ( CustomerId )
 )
 STAGE_FILE_FORMAT = 
